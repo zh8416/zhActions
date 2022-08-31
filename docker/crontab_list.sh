@@ -142,8 +142,6 @@
 20 0 * * *  node /scripts/jd_try.js >> /scripts/logs/jd_try.log 2>&1
 #luck_draw
 20 9 * * *  node /scripts/jd_luck_draw.js >> /scripts/logs/jd_luck_draw.log 2>&1
-#joyjd_open
-35 9 * * *  node /scripts/jd_joyjd_open.js >> /scripts/logs/jd_joyjd_open.log 2>&1
 #店铺签到
 55 0 * * *  node /scripts/jd_dpqd.js >> /scripts/logs/jd_dpqd.log 2>&1
 #微信签到领现金
