@@ -15,7 +15,7 @@
 #jd_daily_lottery
 13 1,22,23 * * * node /scripts/jd_daily_lottery.js >> /scripts/logs/jd_daily_lottery.log 2>&1
 #金榜创造营
-40 9,21 * * * node /scripts/jd_gold_creator.js >> /scripts/logs/jd_gold_creator.log 2>&1
+40 9,21 * * * node /scripts/jd_gold_sign.js >> /scripts/logs/jd_gold_sign.log 2>&1
 #5g超级盲盒
 0 */4 * * * node /scripts/jd_mohe.js >> /scripts/logs/jd_mohe.log 2>&1
 #京喜牧场
@@ -125,7 +125,7 @@
 # 导到所有互助码
 47 7 * * * node /scripts/jd_get_share_code.js >> /scripts/logs/jd_get_share_code.log 2>&1
 # 签到领现金
-27 7,15 * * * node /scripts/jd_cash.js >> /scripts/logs/jd_cash.log 2>&1
+27 7,12,15,20 * * * node /scripts/jd_cash.js >> /scripts/logs/jd_cash.log 2>&1
 # 闪购盲盒
 27 8 * * * node /scripts/jd_sgmh.js >> /scripts/logs/jd_sgmh.log 2>&1
 # 京东秒秒币
@@ -138,6 +138,16 @@
 0 1,17 * * * node /scripts/jd_shake.js >> /scripts/logs/jd_shake.log 2>&1
 #京东试用（默认注释，请配合取关脚本使用）
 10 0 * * *  node /scripts/jd_try_new.js >> /scripts/logs/jd_try_new.log 2>&1
+#京东试用旧
+20 0 * * *  node /scripts/jd_try.js >> /scripts/logs/jd_try.log 2>&1
+#luck_draw
+20 9 * * *  node /scripts/jd_luck_draw.js >> /scripts/logs/jd_luck_draw.log 2>&1
+#joyjd_open
+35 9 * * *  node /scripts/jd_joyjd_open.js >> /scripts/logs/jd_joyjd_open.log 2>&1
+#店铺签到
+55 0 * * *  node /scripts/jd_dpqd.js >> /scripts/logs/jd_dpqd.log 2>&1
+#微信签到领现金
+44 7,12,15,20 * * * node /scripts/jd_cash_wx.js >> /scripts/logs/jd_cash_wx.log 2>&1
 ##############默认注释活动##############
 # jd_cash_exchange
 # 0,1,2 0 * * * node /scripts/jd_cash_exchange.js >> /scripts/logs/jd_cash_exchange.log 2>&1
