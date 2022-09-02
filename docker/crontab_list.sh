@@ -82,6 +82,18 @@
 35 21 */3 * * node /scripts/jd_pay_contract.js >> /scripts/logs/jd_pay_contract.log 2>&1
 #jd_dwapp
 33 5,17 * * * node /scripts/jd_dwapp.js >> /scripts/logs/jd_dwapp.log 2>&1
+# 超级盲盒
+0 20 * * * node /scripts/jd_supermh.js >> /scripts/logs/jd_supermh.log 2>&1
+# 探味奇遇记
+31 0,13 * * * node /scripts/jd_tanwei.js >> /scripts/logs/jd_tanwei.log 2>&1
+# 组队分豆_安佳
+49 6,20 * * * node /scripts/jd_teamAJ.js >> /scripts/logs/jd_teamAJ.log 2>&1
+# 安佳盲盒
+1 11 1-30 9 * node /scripts/jd_AJMH.js >> /scripts/logs/jd_AJMH.log 2>&1
+# 安佳邀新
+11 4,13 1-3,4-30/5 9 * node /scripts/jd_AJYX.js >> /scripts/logs/jd_AJYX.log 2>&1
+# 雅诗兰黛
+11 3,16 1-8,9-30/5 9 * node /scripts/jd_YSLD.js >> /scripts/logs/jd_YSLD.log 2>&1
 ##############长期活动##############
 # 签到
 0 0,18 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
