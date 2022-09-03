@@ -155,9 +155,15 @@
 #luck_draw
 20 9 * * *  node /scripts/jd_luck_draw.js >> /scripts/logs/jd_luck_draw.log 2>&1
 #店铺签到
-55 0 * * *  node /scripts/jd_dpqd.js >> /scripts/logs/jd_dpqd.log 2>&1
+15 2,14 * * *  node /scripts/jd_dpqd.js >> /scripts/logs/jd_dpqd.log 2>&1
 #微信签到领现金
 44 7,12,15,20 * * * node /scripts/jd_cash_wx.js >> /scripts/logs/jd_cash_wx.log 2>&1
+#opencardL232
+29 11,18 1-20 9 *  node /scripts/jd_opencardL232.js >> /scripts/logs/jd_opencardL232.log 2>&1
+#opencardL234
+15 1,21 2-9 9 *  node /scripts/jd_opencardL234.js >> /scripts/logs/jd_opencardL234.log 2>&1
+#opencardL235
+8 8 8 8 *  node /scripts/jd_opencardL235.js >> /scripts/logs/jd_opencardL235.log 2>&1
 ##############默认注释活动##############
 # jd_cash_exchange
 # 0,1,2 0 * * * node /scripts/jd_cash_exchange.js >> /scripts/logs/jd_cash_exchange.log 2>&1
