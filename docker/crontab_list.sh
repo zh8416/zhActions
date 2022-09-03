@@ -91,9 +91,9 @@
 # 安佳盲盒
 1 11 1-30 9 * node /scripts/jd_AJMH.js >> /scripts/logs/jd_AJMH.log 2>&1
 # 安佳邀新
-11 4,13 1-3,4-30/5 9 * node /scripts/jd_AJYX.js >> /scripts/logs/jd_AJYX.log 2>&1
+8 8 8 8 * node /scripts/jd_AJYX.js >> /scripts/logs/jd_AJYX.log 2>&1
 # 雅诗兰黛
-11 3,16 1-8,9-30/5 9 * node /scripts/jd_YSLD.js >> /scripts/logs/jd_YSLD.log 2>&1
+8 8 8 8 * node /scripts/jd_YSLD.js >> /scripts/logs/jd_YSLD.log 2>&1
 ##############长期活动##############
 # 签到
 0 0,18 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
