@@ -96,6 +96,8 @@
 8 8 8 8 * node /scripts/jd_YSLD.js >> /scripts/logs/jd_YSLD.log 2>&1
 # 保价test
 0 20 * * * node /scripts/jd_price.js >> /scripts/logs/jd_price.log 2>&1
+# plusbean
+9 8 * * * node /scripts/jd_plus2bean.js >> /scripts/logs/jd_plus2bean.log 2>&1
 ##############长期活动##############
 # 签到
 0 0,18 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
