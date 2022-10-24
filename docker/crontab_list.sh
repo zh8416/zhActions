@@ -113,6 +113,8 @@
 0 */2 * * * node /scripts/jd_moneyTree.js >> /scripts/logs/jd_moneyTree.log 2>&1
 # 东东萌宠
 5 6-18/6 * * * node /scripts/jd_pet.js >> /scripts/logs/jd_pet.log 2>&1
+# 东东萌宠助力
+45 6-18/6 * * * node /scripts/jd_pet_help.js >> /scripts/logs/jd_pet_help.log 2>&1
 # 京东种豆得豆
 0  6-21/3 * * * node /scripts/jd_plantBean.js >> /scripts/logs/jd_plantBean.log 2>&1
 # 京东种豆得豆互助
