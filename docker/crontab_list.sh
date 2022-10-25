@@ -100,6 +100,13 @@
 9 8 * * * node /scripts/jd_plus2bean.js >> /scripts/logs/jd_plus2bean.log 2>&1
 # 魔方红包雨
 1 15 * * * node /scripts/jd_mfredrain.js >> /scripts/logs/jd_mfredrain.log 2>&1
+# 汪汪乐园-跑步+组队
+30 0 * * * node /scripts/jd_joy_park_run.ts >> /scripts/logs/jd_joy_park_run.log 2>&1
+# 汪汪乐园每日任务
+0 1,7,20 * * * node /scripts/jd_joy_park_task.js >> /scripts/logs/jd_joy_park_task.log 2>&1
+# JOY庄园每日任务
+11 1,15 * * * node /scripts/jd_joymanor_task.js >> /scripts/logs/jd_joymanor_task.log 2>&1
+
 ##############长期活动##############
 # 签到
 0 0,18 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
