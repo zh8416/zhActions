@@ -106,6 +106,10 @@
 0 1,7,20 * * * node /scripts/jd_joy_park_task.js >> /scripts/logs/jd_joy_park_task.log 2>&1
 # JOY庄园每日任务
 11 1,15 * * * node /scripts/jd_joymanor_task.js >> /scripts/logs/jd_joymanor_task.log 2>&1
+# 直播
+1 1 1 1 * node /scripts/jd_live.js >> /scripts/logs/jd_live.log 2>&1
+# 集魔方
+2 0,11 * * * node /scripts/jd_desire.js >> /scripts/logs/jd_desire.log 2>&1
 
 ##############长期活动##############
 # 签到
